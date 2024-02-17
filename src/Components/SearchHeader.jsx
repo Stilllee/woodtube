@@ -16,9 +16,14 @@ export default function SearchHeader() {
 
   return (
     <header className="flex w-full p-4 px-8 mb-4 text-2xl">
-      <Link to="/" className="flex items-center">
+      <Link
+        to="/"
+        className="flex items-center"
+        aria-label="WoodTube 홈"
+        title="WoodTube 홈"
+      >
         <BsYoutube className="text-4xl text-brand" />
-        <h1 className="ml-2 text-3xl font-bold">Woodtube</h1>
+        <h1 className="ml-2 text-3xl font-bold">WoodTube</h1>
       </Link>
       <form className="flex justify-center w-full" onSubmit={handleSubmit}>
         <input
@@ -28,7 +33,11 @@ export default function SearchHeader() {
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
-        <button className="px-6 text-xl bg-darkGray rounded-e-full">
+        <button
+          className="px-6 text-xl bg-darkGray rounded-e-full"
+          aria-label="검색"
+          title="검색"
+        >
           <TfiSearch />
         </button>
       </form>
