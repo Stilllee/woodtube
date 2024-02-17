@@ -8,6 +8,8 @@ module.exports = {
       },
       colors: {
         brand: "#F5D38C",
+        black: "#0F0F0F",
+        darkGray: "#222222",
       },
     },
   },

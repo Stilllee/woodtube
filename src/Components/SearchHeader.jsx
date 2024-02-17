@@ -22,13 +22,13 @@ export default function SearchHeader() {
       </Link>
       <form className="flex justify-center w-full" onSubmit={handleSubmit}>
         <input
-          className="w-7/12 px-5 py-2 border outline-none bg-zinc-900 text-gray-50 border-zinc-600 rounded-s-full"
+          className="w-7/12 px-5 py-2 text-lg bg-transparent border-2 outline-none placeholder:opacity-50 placeholder:text-white placeholder:font-extralight border-darkGray rounded-s-full"
           type="text"
           placeholder="검색"
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
-        <button className="bg-zinc-600 px-7 rounded-e-full">
+        <button className="px-6 text-xl bg-darkGray rounded-e-full">
           <TfiSearch />
         </button>
       </form>
