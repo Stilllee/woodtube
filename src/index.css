@@ -12,7 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
   @apply flex flex-col items-center;
-  @apply bg-zinc-900 text-gray-50;
+  @apply bg-black text-white;
 }
 
 ::-webkit-scrollbar {
