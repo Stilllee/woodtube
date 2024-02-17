@@ -17,16 +17,16 @@ export default function Videos() {
   });
 
   return (
-    <>
+    <div className="p-6">
       {isLoading && <p>Loading...</p>}
       {error && <p>Something is wrong 😖</p>}
       {videos && (
-        <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-y-4">
+        <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-y-6">
           {videos.map((video) => (
             <VideoCard key={video.id} video={video} />
           ))}
         </ul>
       )}
-    </>
+    </div>
   );
 }

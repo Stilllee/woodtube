@@ -13,15 +13,14 @@ export default function RelatedVideos({ id }) {
     queryKey: ["related", id],
     queryFn: () => youtube.relatedVideos(id),
   });
-  console.log(`에러내용: ${error}`);
   return (
     <>
       {isLoading && <p>Loading...</p>}
       {error && <p>Something is wrong 😖</p>}
       {videos && (
-        <ul>
+        <ul className="flex flex-col gap-4">
           {videos.map((video) => (
-            <VideoCard key={video.id} video={video} />
+            <VideoCard key={video.id} video={video} type="list" />
           ))}
         </ul>
       )}
