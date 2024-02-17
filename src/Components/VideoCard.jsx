@@ -9,7 +9,7 @@ export default function VideoCard({ video }) {
     <li
       className="cursor-pointer"
       onClick={() => {
-        navigate(`videos/watch/${video.id}`, { state: { video } });
+        navigate(`/videos/watch/${video.id}`, { state: { video } });
       }}
     >
       <img
