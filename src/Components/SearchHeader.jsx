@@ -15,14 +15,14 @@ export default function SearchHeader() {
   useEffect(() => setText(keyword || ""), [keyword]);
 
   return (
-    <header className="w-full flex p-4 text-2xl border-b border-zinc-600 mb-4">
+    <header className="flex w-full p-4 px-8 mb-4 text-2xl">
       <Link to="/" className="flex items-center">
         <BsYoutube className="text-4xl text-brand" />
-        <h1 className="font-bold ml-2 text-3xl">Woodtube</h1>
+        <h1 className="ml-2 text-3xl font-bold">Woodtube</h1>
       </Link>
-      <form className="w-full flex justify-center" onSubmit={handleSubmit}>
+      <form className="flex justify-center w-full" onSubmit={handleSubmit}>
         <input
-          className="w-7/12 px-5 py-2 outline-none bg-zinc-900 text-gray-50 border border-zinc-600 rounded-s-full"
+          className="w-7/12 px-5 py-2 border outline-none bg-zinc-900 text-gray-50 border-zinc-600 rounded-s-full"
           type="text"
           placeholder="검색"
           value={text}
