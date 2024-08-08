@@ -2,6 +2,16 @@
   "name": "woodtube",
   "version": "0.1.0",
   "private": true,
+  "description": "유튜브 API를 이용한 실시간 동영상 검색 사이트",
+  "author": {
+    "name": "Woodstock",
+    "email": "orodae@gmail.com"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Stilllee/woodtube"
+  },
   "dependencies": {
     "@tanstack/react-query": "^5.20.5",
     "@testing-library/jest-dom": "^5.17.0",
