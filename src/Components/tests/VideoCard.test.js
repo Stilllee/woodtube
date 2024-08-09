@@ -7,30 +7,15 @@ import { render } from "@testing-library/react";
 import { screen } from "@testing-library/dom";
 import { useLocation } from "react-router-dom";
 import userEvent from "@testing-library/user-event";
+import { fakeVideo as video } from "../../tests/videos";
+import { withRouter } from "../../tests/utils";
 
 describe("VideoCard", () => {
-  const video = {
-    id: 1,
-    snippet: {
-      title: "제목",
-      channelId: "1",
-      channelTitle: "채널명",
-      publishedAt: new Date(),
-      thumbnails: {
-        medium: {
-          url: "http://example.com/image.jpg",
-        },
-      },
-    },
-  };
-  const { title, channelId, channelTitle, publishedAt, thumbnails } =
-    video.snippet;
+  const { title, channelTitle, publishedAt, thumbnails } = video.snippet;
 
   it("비디오 항목을 렌더링", () => {
     render(
-      <MemoryRouter>
-        <VideoCard video={video} />
-      </MemoryRouter>
+      withRouter(<Route path="/" element={<VideoCard video={video} />} />)
     );
 
     const image = screen.getByRole("img");
@@ -47,15 +32,15 @@ describe("VideoCard", () => {
     }
 
     render(
-      <MemoryRouter initialEntries={["/"]}>
-        <Routes>
+      withRouter(
+        <>
           <Route path="/" element={<VideoCard video={video} />} />
           <Route
             path={`/videos/watch/${video.id}`}
             element={<LocationStateDisplay />}
           />
-        </Routes>
-      </MemoryRouter>
+        </>
+      )
     );
 
     const card = screen.getByRole("listitem");
