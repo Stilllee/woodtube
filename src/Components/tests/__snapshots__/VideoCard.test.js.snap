@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoCard 그리드 type을 올바르게 렌더링 1`] = `
+<DocumentFragment>
+  <li
+    class=" cursor-pointer hover:scale-105 transition-transform rounded-xl"
+  >
+    <img
+      alt="제목"
+      class="w-full rounded-xl"
+      src="http://example.com/image.jpg"
+    />
+    <div>
+      <p
+        class="my-2 font-semibold line-clamp-2"
+        title="제목"
+      >
+        제목
+      </p>
+      <p
+        class="text-sm opacity-80"
+      >
+        채널명
+      </p>
+      <p
+        class="text-sm opacity-80"
+      >
+        방금
+      </p>
+    </div>
+  </li>
+</DocumentFragment>
+`;
+
+exports[`VideoCard 리스트 type을 올바르게 렌더링 1`] = `
+<DocumentFragment>
+  <li
+    class="flex gap-1 cursor-pointer hover:scale-105 transition-transform rounded-xl"
+  >
+    <img
+      alt="제목"
+      class="w-60 mr-2 rounded-xl"
+      src="http://example.com/image.jpg"
+    />
+    <div>
+      <p
+        class="my-2 font-semibold line-clamp-2"
+        title="제목"
+      >
+        제목
+      </p>
+      <p
+        class="text-sm opacity-80"
+      >
+        채널명
+      </p>
+      <p
+        class="text-sm opacity-80"
+      >
+        방금
+      </p>
+    </div>
+  </li>
+</DocumentFragment>
+`;

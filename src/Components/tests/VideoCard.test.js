@@ -13,6 +13,24 @@ import { withRouter } from "../../tests/utils";
 describe("VideoCard", () => {
   const { title, channelTitle, publishedAt, thumbnails } = video.snippet;
 
+  it("그리드 type을 올바르게 렌더링", () => {
+    const { asFragment } = render(
+      withRouter(<Route path="/" element={<VideoCard video={video} />} />)
+    );
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("리스트 type을 올바르게 렌더링", () => {
+    const { asFragment } = render(
+      withRouter(
+        <Route path="/" element={<VideoCard video={video} type="list" />} />
+      )
+    );
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   it("비디오 항목을 렌더링", () => {
     render(
       withRouter(<Route path="/" element={<VideoCard video={video} />} />)
