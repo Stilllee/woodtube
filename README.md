@@ -3,7 +3,7 @@
 ![image](https://github.com/Stilllee/woodtube/assets/108785772/849d86bb-5f29-4883-9550-f09d465a8adc)
 <br>
 
-[woodTube](https://woodtube.netlify.app/)는 유튜브 API를 사용하여 실시간으로 동영상을 검색하고 시청할 수 있는 사이트입니다.
+[WoodTube](https://woodtube.netlify.app/)는 유튜브 API를 사용하여 실시간으로 동영상을 검색하고 시청할 수 있는 사이트입니다.
 <br>
 
 ## 목차
