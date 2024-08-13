@@ -1,6 +1,5 @@
-import { MemoryRouter, Route, Routes } from "react-router-dom";
-
 import React from "react";
+import { Route } from "react-router-dom";
 import VideoCard from "../VideoCard";
 import { formatAgo } from "../../util/date";
 import { render } from "@testing-library/react";
