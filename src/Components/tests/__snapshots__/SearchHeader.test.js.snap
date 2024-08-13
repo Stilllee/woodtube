@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchHeader 올바르게 렌더링 1`] = `
+<DocumentFragment>
+  <header
+    class="flex w-full p-4 px-8 mb-4 text-2xl"
+  >
+    <a
+      aria-label="WoodTube 홈"
+      class="flex items-center"
+      href="/"
+      title="WoodTube 홈"
+    >
+      <svg
+        class="text-4xl text-brand"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 16 16"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+        />
+      </svg>
+      <h1
+        class="ml-2 text-3xl font-bold"
+      >
+        WoodTube
+      </h1>
+    </a>
+    <form
+      class="flex justify-center w-full"
+    >
+      <input
+        class="w-7/12 px-5 py-2 text-lg bg-transparent border-2 outline-none placeholder:opacity-50 placeholder:text-white placeholder:font-extralight border-darkGray rounded-s-full"
+        placeholder="검색"
+        type="text"
+        value=""
+      />
+      <button
+        aria-label="검색"
+        class="px-6 text-xl bg-darkGray rounded-e-full"
+        title="검색"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          version="1.1"
+          viewBox="0 0 17 17"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g />
+          <path
+            d="M16.604 15.868l-5.173-5.173c0.975-1.137 1.569-2.611 1.569-4.223 0-3.584-2.916-6.5-6.5-6.5-1.736 0-3.369 0.676-4.598 1.903-1.227 1.228-1.903 2.861-1.902 4.597 0 3.584 2.916 6.5 6.5 6.5 1.612 0 3.087-0.594 4.224-1.569l5.173 5.173 0.707-0.708zM6.5 11.972c-3.032 0-5.5-2.467-5.5-5.5-0.001-1.47 0.571-2.851 1.61-3.889 1.038-1.039 2.42-1.611 3.89-1.611 3.032 0 5.5 2.467 5.5 5.5 0 3.032-2.468 5.5-5.5 5.5z"
+          />
+        </svg>
+      </button>
+    </form>
+  </header>
+</DocumentFragment>
+`;
