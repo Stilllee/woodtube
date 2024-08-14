@@ -13,14 +13,8 @@ describe("ChannelInfo", () => {
 
   it("올바르게 렌더링", async () => {
     fakeYoutube.channelImageURL.mockImplementation(() => "url");
-    const { asFragment } = render(
-      withAllContexts(
-        withRouter(
-          <Route path="/" element={<ChannelInfo id="id" name="channel" />} />
-        ),
-        fakeYoutube
-      )
-    );
+    const { asFragment } = renderChannelInfo();
+
     await waitFor(() => screen.getByRole("img"));
     expect(asFragment()).toMatchSnapshot();
   });
@@ -29,21 +23,22 @@ describe("ChannelInfo", () => {
     fakeYoutube.channelImageURL.mockImplementation(() => {
       throw new Error("error");
     });
-    render(
-      withAllContexts(
-        withRouter(
-          <Route path="/" element={<ChannelInfo id="id" name="channel" />} />
-        ),
-        fakeYoutube
-      )
-    );
+
+    renderChannelInfo();
 
     expect(screen.queryByRole("img")).toBeNull();
   });
 
   it("URL이 있을 때 렌더링", async () => {
     fakeYoutube.channelImageURL.mockImplementation(() => "url");
-    render(
+
+    renderChannelInfo();
+
+    await waitFor(() => expect(screen.getByRole("img")).toBeInTheDocument());
+  });
+
+  function renderChannelInfo() {
+    return render(
       withAllContexts(
         withRouter(
           <Route path="/" element={<ChannelInfo id="id" name="channel" />} />
@@ -51,7 +46,5 @@ describe("ChannelInfo", () => {
         fakeYoutube
       )
     );
-
-    await waitFor(() => expect(screen.getByRole("img")).toBeInTheDocument());
-  });
+  }
 });
