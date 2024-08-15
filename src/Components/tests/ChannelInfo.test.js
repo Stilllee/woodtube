@@ -34,7 +34,7 @@ describe("ChannelInfo", () => {
 
     renderChannelInfo();
 
-    await waitFor(() => expect(screen.getByRole("img")).toBeInTheDocument());
+    await screen.findByRole("img");
   });
 
   function renderChannelInfo() {
