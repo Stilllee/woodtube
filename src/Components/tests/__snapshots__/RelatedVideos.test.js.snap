@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RelatedVideos 올바르게 렌더링 1`] = `
+<DocumentFragment>
+  <ul
+    class="flex flex-col gap-4"
+  >
+    <li
+      class="flex gap-1 cursor-pointer hover:scale-105 transition-transform rounded-xl"
+    >
+      <img
+        alt="제목"
+        class="w-60 mr-2 rounded-xl"
+        src="http://example.com/image.jpg"
+      />
+      <div>
+        <p
+          class="my-2 font-semibold line-clamp-2"
+          title="제목"
+        >
+          제목
+        </p>
+        <p
+          class="text-sm opacity-80"
+        >
+          채널명
+        </p>
+        <p
+          class="text-sm opacity-80"
+        >
+          방금
+        </p>
+      </div>
+    </li>
+    <li
+      class="flex gap-1 cursor-pointer hover:scale-105 transition-transform rounded-xl"
+    >
+      <img
+        alt="제목2"
+        class="w-60 mr-2 rounded-xl"
+        src="http://example.com/image2.jpg"
+      />
+      <div>
+        <p
+          class="my-2 font-semibold line-clamp-2"
+          title="제목2"
+        >
+          제목2
+        </p>
+        <p
+          class="text-sm opacity-80"
+        >
+          채널명2
+        </p>
+        <p
+          class="text-sm opacity-80"
+        >
+          방금
+        </p>
+      </div>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
