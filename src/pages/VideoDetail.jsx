@@ -1,7 +1,7 @@
-import React from "react";
-import { useLocation } from "react-router-dom";
 import ChannelInfo from "../Components/ChannelInfo";
+import React from "react";
 import RelatedVideos from "../Components/RelatedVideos";
+import { useLocation } from "react-router-dom";
 
 export default function VideoDetail() {
   const {
@@ -18,7 +18,7 @@ export default function VideoDetail() {
           width="100%"
           height="640"
           src={`https://www.youtube.com/embed/${video.id}`}
-          frameborder="0"
+          frameBorder="0"
           title={title}
         />
         <div className="py-4">
