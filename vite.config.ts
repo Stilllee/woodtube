@@ -5,6 +5,9 @@ import tailwindcss from "tailwindcss";
 // https://vitejs.dev/config/
 export default defineConfig({
   base: "./",
+  define: {
+    "process.env.YOUTUBE_API_KEY": JSON.stringify(process.env.YOUTUBE_API_KEY),
+  },
   plugins: [react()],
   css: {
     postcss: {
